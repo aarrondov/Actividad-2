@@ -1,8 +1,11 @@
 package ende;
 
 public class Jugador{
-    int exitos;      // número de partidas ganadas
-    int winTotal;
+    private int exitos;      // número de partidas ganadas
+
+    public Jugador() {
+        this.exitos = 0;
+    }
 
     /**
      * Escoge piedra, papel o tijera al azar
@@ -18,10 +21,12 @@ public class Jugador{
         }
         return opcion;
     }
+
     public void setExitos()
     {
         exitos++;
     }
+
     public int getExitos()
     {
         return(exitos);
